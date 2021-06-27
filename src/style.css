@@ -72,11 +72,6 @@ nav ul > li > a:hover{
   nav{
     display: none;
   }
-  nav > ul > li > a{
-    font-size: 15px;
-    margin:0 3px;
-  }
-
 }
 
 main{
@@ -421,11 +416,10 @@ footer > p{
     align-items: center;
     padding:5px;
     border: none;
-    width:90%;
+    margin-bottom: 5px;
   }
   .form button{
     border: 1px solid white;
-    width: 90%;
   }
 }
 
