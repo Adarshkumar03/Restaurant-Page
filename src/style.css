@@ -193,7 +193,7 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
-     top:740px;
+     top:750px;
    }
 }
 
@@ -274,6 +274,9 @@ button{
   .comment h2{
      font-size:40px;
   }
+  .comment{
+    top:650px;
+  }
 }
 
 .comment h2{
@@ -291,6 +294,12 @@ button{
    top:604px;
    height:300px; 
    width:100vw;
+}
+
+@media screen and (max-width:480px) {
+  .map{
+    top:650px;
+  }
 }
 .map iframe{
   width:100vw;
