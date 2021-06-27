@@ -402,13 +402,6 @@ footer > p{
   width:100vw;
   border: 1px solid white;
 }
-@media screen and (max-width:480px) {
-  .form{
-    height: max-content;
-    margin: 0 auto 5px;
-    border: none;    
-  }
-}
 
 .form input{
   padding:10px;
@@ -426,13 +419,14 @@ footer > p{
   .form{
     flex-direction: column;
     padding:5px;
+    border: none;
+    margin:0 auto 5px;
   }
   .form input{
     width: 90%;
   }
   .form button{
     width:90%;
-    margin-bottom:10px;
   }
 }
 
