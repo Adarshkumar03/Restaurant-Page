@@ -192,7 +192,7 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
-     top:619px;
+     top:659px;
    }
 }
 
@@ -405,6 +405,7 @@ footer > p{
   .form{
     height: max-content;
     margin-bottom:10px;
+    border: none;
   }
 }
 
