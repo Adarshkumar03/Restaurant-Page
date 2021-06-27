@@ -118,7 +118,7 @@ button{
 
 .img-gallery-div button{
     position: relative;
-    top:-335px;
+    top:-325px;
     left: 47%;
     width:7%;
     z-index:10;
@@ -192,7 +192,7 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
-     top:620px;
+     top:619px;
    }
 }
 
@@ -400,6 +400,12 @@ footer > p{
   height: 45px;
   width:100vw;
   border: 1px solid white;
+}
+@media screen and (max-width:480px) {
+  .form{
+    height: max-content;
+    margin-bottom:10px;
+  }
 }
 
 .form input{
