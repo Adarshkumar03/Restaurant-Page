@@ -144,7 +144,7 @@ button{
 @media screen and (max-width:480px) {
   .img-gallery-div button{
     width: max-content;
-    left:40%;
+    left:41%;
     top:-520px;
   }
 }
