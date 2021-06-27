@@ -119,7 +119,7 @@ button{
 
 @media screen and (max-width:480px) {
   .img-gallery-div{
-    height: 100vh;
+    height: 550px;
     width:100%;
   }
   .img-gallery-div h1{
