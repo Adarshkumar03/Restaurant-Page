@@ -30,11 +30,6 @@ header{
     z-index:200;
 }
 
-@media screen and (max-width:480px) {
-  header{
-    width: 410px;
-  }
-}
 
 header h1{
   font-weight: 900;
@@ -44,6 +39,20 @@ header h1 span img{
     height:25px;
     margin:0;
     padding: 0;
+}
+
+@media screen and (max-width:480px) {
+  header{
+    width: 411px;
+    flex-direction: column;
+    height:max-content;
+  }
+  header h1{
+    text-align: center;
+  }
+  nav{
+    display: none;
+  }
 }
 
 nav{
@@ -187,7 +196,7 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
-     top:689px;
+     top:700px;
    }
 }
 
