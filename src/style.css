@@ -35,7 +35,7 @@ header{
     padding: 0 10px;
   }
   nav{
-    width:10%;
+    width:max-content;
   }
 }
 
@@ -99,7 +99,7 @@ button{
 
 @media screen and (max-width:480px) {
   .img-gallery-div h1{
-    left:30%;
+    left:23%;
   }
 }
 
@@ -286,7 +286,17 @@ footer{
   position: relative;
   top: 604px;
   padding:60px 35px 10px 35px;
-  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width:480px) {
+  footer{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer > p{
@@ -335,7 +345,7 @@ footer > p{
 @media screen and (max-width:480px) {
   .social{
     width: 100%;
-    justify-self: center;
+    justify-content: center;
   }
 }
 
