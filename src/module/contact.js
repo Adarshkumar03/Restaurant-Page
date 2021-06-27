@@ -10,6 +10,7 @@ function loadContact(){
 
     contact.setAttribute("id", "contact");
     const image = document.createElement("div");
+    image.classlist.add("image");
     
     const myImage7 = new Image();
     myImage7.src = img7;

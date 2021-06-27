@@ -13,7 +13,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 header{
@@ -28,6 +28,12 @@ header{
     justify-content: space-between;
     color: var(--black);
     z-index:200;
+}
+
+@media screen and (max-width:480px) {
+  header{
+    padding: 0 10px;
+  }
 }
 
 header h1{
@@ -164,9 +170,6 @@ button{
    .features-grid{
      grid-template-columns: auto;
    }
-   .grid-item img{
-     display: none;
-   } 
 }
 
 .grid-item{
