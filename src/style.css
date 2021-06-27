@@ -32,7 +32,7 @@ header{
 
 @media screen and (max-width:480px) {
   header{
-    padding: 0 15px;
+    padding: 5px;
     width: 480px;
   }
 }
@@ -107,7 +107,8 @@ button{
 
 @media screen and (max-width:480px) {
   .img-gallery-div h1{
-    left:11%;
+    left:10%;
+    margin-bottom:10px;
   }
 }
 
@@ -192,11 +193,18 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
+     top:700px;
    }
 }
 
 .grid-item{
   height: 500px;
+}
+
+@media screen and (max-width:480px) {
+  .grid-item{
+    height:350px;
+  }
 }
 
 .grid-item img{
