@@ -99,7 +99,7 @@ button{
 
 @media screen and (max-width:480px) {
   .img-gallery-div h1{
-    left:23%;
+    left:20%;
   }
 }
 
@@ -291,11 +291,17 @@ footer{
 
 @media screen and (max-width:480px) {
   footer{
-    padding:10px;
+    padding:15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  footer> *{
+    margin:15px 0;
+  }
+  footer > *:first-child{
+    margin-top:0;
   }
 }
 
@@ -356,24 +362,19 @@ footer > p{
   border:1px solid var(--white);
 }
 
+@media screen and (max-width:480px) {
+  .social button{
+    margin:0 5px;
+  }
+}
+
 .form{
   display: flex;
   height: 45px;
   width:100%;
   border: 1px solid white;
 }
-@media screen and (max-width:480px) {
-  .form{
-    flex-direction: column;
-  }
-  .form input{
-    width: 100%;
-  }
-  .form button{
-    width:100%;
-    margin-bottom:10px;
-  }
-}
+
 .form input{
   padding:10px;
   width:70%;
@@ -384,6 +385,20 @@ footer > p{
   background-color: #121212;
   color: var(--white);
   border: 1px solid #121212;
+}
+
+@media screen and (max-width:480px) {
+  .form{
+    flex-direction: column;
+    padding:5px;
+  }
+  .form input{
+    width: 100%;
+  }
+  .form button{
+    width:100%;
+    margin-bottom:10px;
+  }
 }
 
 
