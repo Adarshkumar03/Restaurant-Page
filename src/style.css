@@ -212,6 +212,15 @@ button{
   line-height: 1.5;
 }
 
+@media screen and (max-width:480px) {
+  .features{
+    padding:10px;
+  }
+  .features p{
+    width: 100%;
+  }
+}
+
 .comment{
   border: 1px solid #929aab;
   position: relative;
