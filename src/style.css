@@ -108,7 +108,6 @@ button{
 @media screen and (max-width:480px) {
   .img-gallery-div h1{
     left:10%;
-    margin-bottom:10px;
   }
 }
 
@@ -193,7 +192,7 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
-     top:710px;
+     top:620px;
    }
 }
 
