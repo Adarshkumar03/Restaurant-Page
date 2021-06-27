@@ -286,7 +286,7 @@ button{
      font-size:40px;
   }
   .comment{
-    top:750px;
+    top:752px;
   }
 }
 
@@ -299,7 +299,7 @@ button{
 
 @media screen and (max-width:480px) {
   .map{
-    top:650px;
+    top:680px;
   }
 }
 .map iframe{
