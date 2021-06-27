@@ -13,6 +13,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 header{
@@ -63,6 +64,7 @@ nav ul > li > a:hover{
 
 main{
     margin: 0;
+    width:100%;
 }
 
 button{
@@ -74,7 +76,7 @@ button{
 /* Image Gallery */
 .img-gallery-div{
     position: absolute;
-    top:-120px;
+    top:-101px;
 }
 
 .img-gallery-div h1{
@@ -158,6 +160,15 @@ button{
   grid-template-columns: auto auto;
 }
 
+@media screen and (max-width:480px) {
+   .features-grid{
+     grid-template-columns: auto;
+   }
+   .grid-item img{
+     display: none;
+   } 
+}
+
 .grid-item{
   height: 500px;
 }
@@ -209,6 +220,7 @@ button{
   justify-content: center;
   align-items: center;
   height:300px;
+  width: 100%;
 }
 
 .comment h2{
@@ -225,6 +237,10 @@ button{
    position: relative;
    top:604px;
    height:300px; 
+   width:100%;
+}
+.map iframe{
+  width:100%;
 }
 
 footer{
@@ -233,6 +249,7 @@ footer{
   position: relative;
   top: 604px;
   padding:60px 35px 10px 35px;
+  width: 100%;
 }
 
 footer > p{
@@ -243,6 +260,13 @@ footer > p{
 .footer-divs{
   display: flex;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width:480px) {
+  .footer-divs{
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
 }
 
 .footer-divs div:nth-of-type(1){
@@ -281,6 +305,17 @@ footer > p{
   height: 45px;
   width:100%;
   border: 1px solid white;
+}
+@media screen and (max-width:480px) {
+  .form{
+    flex-direction: column;
+  }
+  .form input{
+    width: 100%;
+  }
+  .form button{
+    width:100%;
+  }
 }
 .form input{
   padding:10px;
