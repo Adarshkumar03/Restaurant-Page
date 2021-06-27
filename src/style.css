@@ -193,7 +193,7 @@ button{
 @media screen and (max-width:480px) {
    .features-grid{
      grid-template-columns: auto;
-     top:1000px;
+     top:1010px;
    }
 }
 
@@ -203,7 +203,7 @@ button{
 
 @media screen and (max-width:480px) {
   .grid-item{
-    height:350px;
+    height:400px;
   }
 }
 
