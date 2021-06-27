@@ -32,7 +32,7 @@ header{
 
 @media screen and (max-width:480px) {
   header{
-    width: 400px;
+    width: 410px;
   }
 }
 
@@ -421,6 +421,7 @@ footer > p{
     align-items: center;
     padding:5px;
     border: none;
+    width:90%;
   }
   .form button{
     border: 1px solid white;
