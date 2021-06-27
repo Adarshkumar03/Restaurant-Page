@@ -102,14 +102,13 @@ button{
     position: relative;
     color:var(--white);
     top:360px;
-    transform: translateX(-50%);
     z-index:10;
 }
 
 @media screen and (max-width:480px) {
-  /* .img-gallery-div h1{
+  .img-gallery-div h1{
     left:14%;
-  } */
+  }
 }
 
 .img-gallery-div h1 span img{
@@ -335,6 +334,12 @@ footer > p{
 
 .footer-divs div:nth-of-type(1){
   margin-right:320px;
+}
+
+@media screen and (max-width:480px){
+  .footer-divs div:nth-of-type(1){
+    margin-right: 0;
+  }
 }
 
 .footer-divs div h3{
