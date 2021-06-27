@@ -32,8 +32,7 @@ header{
 
 @media screen and (max-width:480px) {
   header{
-    padding: 5px;
-    width: 460px;
+    width: 450px;
   }
 }
 
@@ -418,9 +417,10 @@ footer > p{
 @media screen and (max-width:480px) {
   .form{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding:5px;
     border: none;
-    margin:0 auto 5px auto;
   }
   .form input{
     width: 90%;
