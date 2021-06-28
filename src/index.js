@@ -15,6 +15,7 @@ library.add(faCopyright);
 dom.watch();
 
 function component(){
+     console.log(window.innerWidth);
      const content = document.createElement("div");
      content.setAttribute("id", "content");
      console.log(content);
