@@ -102,6 +102,7 @@ button{
     cursor: pointer;
 }
 
+
 /* Image Gallery */
 .img-gallery-div{
     position: absolute;
@@ -458,6 +459,10 @@ footer > p{
   }
 }
 
+#home + footer{
+  right:-17px;
+}
+
 #contact{
   display: flex;
   flex-direction: column;
@@ -522,6 +527,7 @@ footer > p{
 
 #contact + footer{
   top:0px;
+  right:-17px;
 }
 
 #menu{  
@@ -532,29 +538,56 @@ footer > p{
 }
 
 #menu + footer{
-  top:2890px;
+  top:3030px;
+  right:-17px;
 }
 
 .menu-img-div{
   margin-top:90px;
   height:100vh;
+  margin-bottom: 0;
 }
 
 .menu-img-div img{
   filter: brightness(50%);
-  height:600px;
+  height:625px;
   width:100vw;
   object-fit: cover;
 }
 
 .menu-img-div h1{
   position: absolute;
-  top:270px;
-  left:4.25%;
+  top:275px;
+  left:45%;
   z-index:100;
   color:white;
   font-weight: 400;
   font-size:60px;
+}
+
+.some-div{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:50px;
+  margin-top: 0;
+}
+
+.some-div h2{
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color:#C1C1C1;
+  margin-bottom: 0px;
+}
+.some-div p{
+  color:#7F7F7B;
+  width:45%;
+  text-align: center;
+  font-size:15px;
+  margin-bottom: 30px;
 }
 
 .menu-grid{
@@ -576,7 +609,26 @@ footer > p{
 
 .ing{
   width:33.33vw;
-  background-color:orange;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ing h2{
+  font-size: 30px;
+}
+.ing:nth-of-type(odd){
+  background-color: white;
+}
+
+.ing:nth-of-type(even){
+  background-color: #DE6A41;
+  color:#F3DACF;
+}
+.ing p{
+  text-align: center;
 }
 
 .item-img{

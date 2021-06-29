@@ -8,9 +8,11 @@ library.add(faMapMarkerAlt);
 library.add(faPhone);
 library.add(faComment);
 
-function loadContact(){
+const loadContact = () => {
     const contact = document.createElement("main");
     contact.setAttribute("id", "contact");
+    contact.setAttribute("data-tab-content", "");
+
 
     const contactImage = document.createElement("div");
     contactImage.classList.add("contact-img-div");
@@ -87,7 +89,7 @@ function loadContact(){
 
      contact.appendChild(contactImage); 
      contact.appendChild(reachOutDiv); 
-    return contact;
-}
+     return contact;
+};
 
 export {loadContact};

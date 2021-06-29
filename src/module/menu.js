@@ -5,9 +5,12 @@ import img11 from "../img/img11.jpg";
 import img12 from "../img/img12.jpg";
 import "../style.css";
 
-function loadMenu(){
+const loadMenu = () => {
+
     const menu = document.createElement("menu");
     menu.setAttribute("id", "menu");
+    menu.setAttribute("data-tab-content", "");
+
 
     const menuImage = document.createElement("div");
     menuImage.classList.add("menu-img-div");
@@ -22,14 +25,15 @@ function loadMenu(){
     menuImage.appendChild(myImage8);
 
     const someDiv = document.createElement("div");
-    const someDiv_h1 = document.createElement("h1");
-    someDiv_h1.textContent="ForkFull";
+    someDiv.classList.add("some-div");
+    const someDiv_h2 = document.createElement("h2");
+    someDiv_h2.textContent="ForkFull";
     const someDiv_p = document.createElement("p");
     someDiv_p.textContent = "GET FORKFULL FOR TAKE OUT OR DELIVERED FRESH DIRECTLY FROM US OR USING YOUR FAVORITE DELIVERY APP.";
     const someDiv_button = document.createElement("button");
     someDiv_button.textContent = "Order";
 
-    someDiv.appendChild(someDiv_h1);
+    someDiv.appendChild(someDiv_h2);
     someDiv.appendChild(someDiv_p);
     someDiv.appendChild(someDiv_button);
     
@@ -42,9 +46,9 @@ function loadMenu(){
     const menuItem1_ingredients_h2 = document.createElement("h2");
 
     menuItem1_ingredients_h2.textContent = "Main Course";
-    const menuItem1_ingredients_list = document.createElement("ul");
-    menuItem1_ingredients_list.innerHTML = `<li>Chicken Biriyani</li>
-    <li>Chicken Gravy</li><li>Shahi Paneer</li><li>Mutton Biriyani</li>`;
+    const menuItem1_ingredients_list = document.createElement("p");
+    menuItem1_ingredients_list.innerHTML = `<p>Chicken Biriyani</p>
+    <p>Chicken Gravy</p><p>Shahi Paneer</p><p>Mutton Biriyani</p>`;
     
     menuItem1_ingredients.appendChild(menuItem1_ingredients_h2);
     menuItem1_ingredients.appendChild(menuItem1_ingredients_list);
@@ -64,9 +68,9 @@ function loadMenu(){
     const menuItem2_ingredients_h2 = document.createElement("h2");
     menuItem2_ingredients_h2.textContent = "Starters";
 
-    const menuItem2_ingredients_list = document.createElement("ul");
-    menuItem2_ingredients_list.innerHTML = `<li>Chicken Soup</li>
-    <li>Tomato Soup</li><li>Chicken Lolipop</li><li>Paneer Tikka</li>`;
+    const menuItem2_ingredients_list = document.createElement("p");
+    menuItem2_ingredients_list.innerHTML = `<p>Chicken Soup</p>
+    <p>Tomato Soup</p><p>Chicken Lolipop</p><p>Paneer Tikka</p>`;
     
     menuItem2_ingredients.appendChild(menuItem2_ingredients_h2);
     menuItem2_ingredients.appendChild(menuItem2_ingredients_list);
@@ -87,9 +91,9 @@ function loadMenu(){
     const menuItem3_ingredients_h2 = document.createElement("h2");
     menuItem3_ingredients_h2.textContent = "Bevarages";
 
-    const menuItem3_ingredients_list = document.createElement("ul");
-    menuItem3_ingredients_list.innerHTML = `<li>Lemonade</li>
-    <li>Tea/Coffe</li><li>Soft Drinks</li><li>Cider</li>`;
+    const menuItem3_ingredients_list = document.createElement("p");
+    menuItem3_ingredients_list.innerHTML = `<p>Lemonade</p>
+    <p>Tea/Coffe</p><p>Soft Drinks</p><p>Cider</p>`;
     
     menuItem3_ingredients.appendChild(menuItem3_ingredients_h2);
     menuItem3_ingredients.appendChild(menuItem3_ingredients_list);
@@ -109,9 +113,9 @@ function loadMenu(){
     const menuItem4_ingredients_h2 = document.createElement("h2");
     menuItem4_ingredients_h2.textContent = "Dessert";
 
-    const menuItem4_ingredients_list = document.createElement("ul");
-    menuItem4_ingredients_list.innerHTML = `<li>Red Velvet Pastry</li>
-    <li>Brownie Cookie</li><li>Chocolate Peanutbutter</li><li>Cheese Cake</li>`;
+    const menuItem4_ingredients_list = document.createElement("p");
+    menuItem4_ingredients_list.innerHTML = `<p>Red Velvet Pastry</p>
+    <p>Brownie Cookie</p><p>Chocolate Peanutbutter</p><p>Cheese Cake</p>`;
     
     menuItem4_ingredients.appendChild(menuItem4_ingredients_h2);
     menuItem4_ingredients.appendChild(menuItem4_ingredients_list);
@@ -137,6 +141,6 @@ function loadMenu(){
     menu.appendChild(someDiv);
     menu.appendChild(menuDiv);
     return menu;
-}
+};
 
 export {loadMenu};

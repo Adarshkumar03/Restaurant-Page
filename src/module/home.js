@@ -6,9 +6,12 @@ import img5 from "../img/img5.jpg";
 import img6 from "../img/img6.jpg";
 import fork from "../img/fork.png";
 
-function loadHome(){
+const loadHome = () => {
+
     const home = document.createElement("main");
     home.setAttribute("id", "home");
+    home.setAttribute("data-tab-content", "");
+    home.classList.add("active");
 
      //Image Gallery Div
      const imgGalleryDiv = document.createElement("div");
@@ -163,7 +166,7 @@ function loadHome(){
      home.appendChild(features_grid);
      home.appendChild(comment);
      home.appendChild(map);
-    return home;
-}
+     return home;
+};
 
 export {loadHome};
