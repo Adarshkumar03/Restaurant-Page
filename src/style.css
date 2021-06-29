@@ -459,10 +459,6 @@ footer > p{
   }
 }
 
-#home + footer{
-  right:-17px;
-}
-
 #contact{
   display: flex;
   flex-direction: column;
@@ -527,7 +523,6 @@ footer > p{
 
 #contact + footer{
   top:0px;
-  right:-17px;
 }
 
 #menu{  
@@ -539,7 +534,6 @@ footer > p{
 
 #menu + footer{
   top:3030px;
-  right:-17px;
 }
 
 .menu-img-div{
