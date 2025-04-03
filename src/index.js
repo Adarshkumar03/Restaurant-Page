@@ -60,8 +60,8 @@ const component = (() => {
      
      const footer_address = document.createElement("div");
 
-     const footer_address_h3 = document.createElement("h3");
-     footer_address_h3.textContent = "ForkFull";
+     const footer_address_h3 = document.createElement("h2");
+     footer_address_h3.innerHTML = `Fork<span><img src="${fork}"/></span>ull`;
      
      const footer_address_p1 = document.createElement("p");
      footer_address_p1.textContent = "ForkFull, 946 /a, Jama Masjid, Delhi, New Delhi 110006";
@@ -100,7 +100,8 @@ const component = (() => {
      footer_reach_social.appendChild(footer_reach_social_linkedin);
 
      const footer_reach_h3 = document.createElement("h3");
-     footer_reach_h3.textContent = "Send a message";
+     footer_reach_h3.classList.add("footer-reach");
+     footer_reach_h3.textContent = "Reach Us";
      
      const footer_form = document.createElement("form");
      footer_form.classList.add("form");
